@@ -1,0 +1,54 @@
+.calculator {
+  width: 300px; /* Adjusted the width to be more compact */
+  margin: 100px auto;
+  background: #222;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Ensures border radius is applied to all elements */
+}
+
+.display {
+  background: #000;
+  color: #fff;
+  text-align: right;
+  padding: 20px;
+  font-size: 2em;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box; /* Ensures padding is included in total width */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+}
+
+button {
+  background: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+  background: #f1f1f1;
+}
+
+#clear {
+  grid-column: span 2;
+  background: #ff6666; /* Different background for clear button */
+  color: #fff;
+}
+
+#equals {
+  grid-column: span 2;
+  background: #4caf50; /* Different background for equals button */
+  color: #fff;
+}
+
+button.operator {
+  background: #ffa500; /* Different background for operator buttons */
+  color: #fff;
+}
